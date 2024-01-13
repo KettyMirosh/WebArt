@@ -1,3 +1,20 @@
+.btn-back, .btn {
+  border-radius: 15px;
+  background-color: rgb(14, 9, 73);
+  padding: 15px 30px 15px 30px;
+  font-size: 1.125rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  box-shadow: 5px 5px 25px rgba(14, 9, 73, 0.4);
+  cursor: pointer;
+}
+
+.btn-back:hover, .btn:hover {
+  border: 3px solid rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+  box-shadow: 2px 2px 10px rgb(191, 218, 234);
+}
+
 @font-face {
   font-family: "Raleway";
   src: url(../fonts/raleway-18.woff), url(../fonts/raleway-18.woff2);
@@ -114,24 +131,17 @@ ul {
   border: 5px solid rgb(255, 255, 255);
 }
 
-.btn {
-  width: 139px;
-  height: 55px;
-  border-radius: 15px;
-  background-color: rgb(14, 9, 73);
-  padding: 15px 30px 15px 30px;
-  font-size: 1.125rem;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  box-shadow: 5px 5px 25px rgba(14, 9, 73, 0.4);
-  cursor: pointer;
-}
-.btn:hover {
-  border: 3px solid rgb(255, 255, 255);
-  transition: 0.1s ease-in-out;
-  box-shadow: 2px 2px 10px rgb(228, 241, 250);
+a {
+  text-decoration: none;
 }
 
 .button-back {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 80px 0;
+}
+
+.btn-back {
+  width: 425px;
+  height: 55px;
 }/*# sourceMappingURL=the-second-page.css.map */
