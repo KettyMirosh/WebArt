@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@100;400;500;600&family=Pacifico&family=Roboto+Slab&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@100;400;500;600&family=Pacifico&family=Raleway:wght@700&family=Roboto+Slab&display=swap');
+
+
+body {
+    width: 1920px;
+    height: 1977px;  
+}
+
+.container_block-No1-with-pictures {
+    background:var(---, #E4F1FA);
+    width: 100%;
+}
+
+.matser-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    color: #3B3F48;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    align-self: center;
+    text-align: center;   
+}
+.block-No1-master_class {
+display: flex;
+width: 1147px;
+height: 444px;
+padding-bottom: 44px;
+justify-content: center;
+align-items: flex-start;
+gap: 50px;
+}
+
+.block-No1-text {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 528px;
+    height: 395px;
+}
+
+.images_matser-cards {
+    display: flex;
+    width: 570px;
+    height: 400px;
+}
+
+.font-30 {
+color: var(---, #3B3F48);
+font-family: 'Montserrat';
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; 
+}
+
+ul > li{
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+}*
+
+ul{
+    list-style-type: none;
+    list-style-image: url(WebArt\assets\images\ci_check.svg);
+}
+
+.weight600 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(---, #3B3F48);
+}
+
+.weight400,  .materials_list{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(---, #3B3F48);
+}
+
+.button_block-No1 {
+    display: flex;
+    width: 139px;
+    height: 55px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(---, #0E0949);
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: var(---, #FFF);
+    /* Кнопка */
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; 
+    text-transform: uppercase;
+}
+
+.button_block-No_1more_master-classes {
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(---, #0E0949);
+    /* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: var(---, #FFF);
+    /* Кнопка */
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    text-transform: uppercase;
+}
+
+.price700 {
+    color: var(---, #3B3F48);
+
+    /* Стоимость */
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+}
+
+.weight700 {
+    color: #EB6033;
+
+    /* Стоимость */
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
