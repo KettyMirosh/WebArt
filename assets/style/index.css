@@ -1,41 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@100;400;500;600&family=Pacifico&family=Roboto+Slab&display=swap');
 
- @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@100;400;500;600&family=Pacifico&family=Raleway:wght@700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@100;400;500;600&family=Pacifico&family=Raleway:wght@700&family=Roboto+Slab&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     width: 1920px;
-    height: 1977px;  
+    height: 4596px; 
+    border: #EB6033 solid 1px;
 }
 
 .container_block-No1-with-pictures {
     background:var(---, #E4F1FA);
-    width: 100%;
+    width: 1920px;
+    height: 1977px;
 }
 
 .matser-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1920px;
+    height: 444px;
+    gap: 50px;
 }
-h2 {
+
+.block-No1-h2 {
     color: #3B3F48;
     font-family: 'Montserrat';
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%;
+    /*line-height: 140%;*/
     align-self: center;
-    text-align: center;   
+    text-align: center;
+    padding: 3%;   
 }
+
 .block-No1-master_class {
-display: flex;
-width: 1147px;
-height: 444px;
-padding-bottom: 44px;
-justify-content: center;
-align-items: flex-start;
-gap: 50px;
+    display: flex;
+    width: 1147px;
+    height: 444px;
+    padding-bottom: 44px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
 }
 
 .block-No1-text {
@@ -44,7 +56,10 @@ gap: 50px;
     flex-direction: column;
     align-items: flex-start;
     width: 528px;
-    height: 395px;
+    height: 444px;
+    /*margin: 0px;
+    padding: 0px;*/
+    text-wrap: balance;
 }
 
 .images_matser-cards {
@@ -54,12 +69,14 @@ gap: 50px;
 }
 
 .font-30 {
-color: var(---, #3B3F48);
-font-family: 'Montserrat';
-font-size: 30px;
-font-style: normal;
-font-weight: 500;
-/*line-height: 140%;*/
+    color: var(---, #3B3F48);
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    /*margin: 0px;
+    padding: 0px;*/
+    line-height: 140%;
 }
 
 ul > li{
@@ -80,6 +97,8 @@ ul{
     font-weight: 600;
     line-height: 120%;
     color: var(---, #3B3F48);
+    /*margin: 0px;
+    padding: 0px;*/
 }
 
 .weight400,  .materials_list{
@@ -87,14 +106,16 @@ ul{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%;
     color: var(---, #3B3F48);
+   line-height: 120%;
+    /* margin: 0px;
+    padding: 0px;*/
 }
 
 .button_block-No1 {
     display: flex;
-    width: 139px;
-    height: 55px;
+    width: 83px;
+    height: 26px;
     padding: 15px 30px;
     justify-content: center;
     align-items: center;
@@ -110,6 +131,7 @@ ul{
     font-weight: 600;
     line-height: 140%; 
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .button_block-No_1more_master-classes {
@@ -130,6 +152,7 @@ ul{
     font-weight: 600;
     line-height: 140%; /* 25.2px */
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .price700 {
@@ -139,7 +162,9 @@ ul{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 33.6px */
+    /*margin: 0px;
+    padding: 0px;*/
+    line-height: 140%; /* 33.6px*/ 
 }
 
 .weight700 {
@@ -149,6 +174,8 @@ ul{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
+    /*margin: 0px;
+    padding: 0px;*/
     line-height: 140%;
 }
 
