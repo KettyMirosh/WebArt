@@ -59,7 +59,7 @@ font-family: 'Montserrat';
 font-size: 30px;
 font-style: normal;
 font-weight: 500;
-line-height: 140%; 
+/*line-height: 140%;*/
 }
 
 ul > li{
@@ -134,7 +134,6 @@ ul{
 
 .price700 {
     color: var(---, #3B3F48);
-
     /* Стоимость */
     font-family: 'Raleway';
     font-size: 24px;
@@ -145,7 +144,6 @@ ul{
 
 .weight700 {
     color: #EB6033;
-
     /* Стоимость */
     font-family: 'Raleway';
     font-size: 24px;
