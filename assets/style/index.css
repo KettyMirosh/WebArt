@@ -87,7 +87,7 @@ ul > li{
 
 ul{
     list-style-type: none;
-    list-style-image: url(WebArt\assets\images\ci_check.svg);
+    list-style-image: url(WebArt\assets\images\ci_check.png);
 }
 
 .weight600 {
