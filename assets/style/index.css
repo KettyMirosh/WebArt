@@ -7,17 +7,19 @@
 * {
     margin: 0;
     padding: 0;
-   
-}
+   }
 
 body {
     width: 1920px;
     height: 4596px; 
     }
 
+    
+
 .container_block-No1-with-pictures {
     background:var(---, #E4F1FA);
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     height: 1977px;
 }
 
@@ -27,7 +29,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 1920px;
-    gap: 50px;
+    gap: 3.125em;
 }
 
 .block-No1-h2 {
@@ -44,22 +46,24 @@ body {
 
 .block-No1-master_class {
     display: flex;
-    width: 1147px;
+    width: 100%;
+    max-width: 1147px;
     height: 444px;
     padding-bottom: 44px;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
+    gap: 3.125em;
 }
 
 .block-No1-text {
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
-   }
+}
 
 .images_matser-cards {
-    max-width: 100%;
-    max-height: 400px;
+    width: 100%;
+    max-width: 570px;
+    height: 400px;
 }
 
 .font-30 {
@@ -68,16 +72,14 @@ body {
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
-    /*margin: 0px;
-    padding: 0px;*/
     line-height: 140%;
 }
 
 .materials_list {
-   /* margin-block-start: 0.2em;*/
+/* margin-block-start: 0.2em;*/
     margin-block-end: 0.2em;
     list-style-type: none;
-    list-style-image: url(../images/ci_check.png);
+    list-style-image: url(../images/ci_check.svg);
     padding-inline-start: revert;
 }
 
@@ -174,10 +176,159 @@ body {
     line-height: 140%;
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 768px) {
+    .container_block-No1-with-pictures {
+        background:var(---, #E4F1FA);
+        width: 768px;
+        height: 1632px;
+}
+.matser-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 711px;
+    height: 377px;
+    gap: 15.098px;
+}
+.block-No1-h2 {
+    align-self: center;
+    text-align: center;
+    padding: 3%;       
+    color: var(---, #3B3F48);
+    /* МП/H2 */
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+}
+
+.block-No1-master_class {
+    display: flex;
+    width: 711px;
+    height: 377px;
+    gap: 15.098px;
+    padding-bottom: 44px;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.images_matser-cards {
+    width: 351px;
+    height: 246px;
+    border-radius: 20px;
+    border: 5px solid var(---, #FFF);
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.font-30 {
+    color: var(---, #3B3F48);
+/* МП/H3 */
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 30.8px */
+}
+
+.weight600 {
+    font-family: 'Montserrat';
+    /* МП/Текст 14 полужирный */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+    color: var(---, #3B3F48);
+}
+
+.weight400,  .materials_list{
+    font-family: 'Montserrat';
+    /* МП/Текст 14 */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    color: var(---, #3B3F48);
+    
+}
+
+.button_block-No1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: var(---, #0E0949);
+    /* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: var(---, #FFF);
+    /* МП/Кнопка */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button_block-No_1more_master-classes {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: var(---, #0E0949);
+/* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: var(---, #FFF);
+    /* МП/Кнопка */
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    text-transform: uppercase;
+}
+
+.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
+    border: 2px solid  var(---, #FFF)
+}
+
+.price700 {
+    width: 256.069px;
+    height: 31px;
+    color: var(---, #3B3F48);
+    /* МП/Стоимость */
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+}
+
+.weight700 {
+    width: 256.069px;
+    height: 31px;
+    color: #EB6033;
+    /* МП/Стоимость */
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+}
+
+@media screen and (max-width: 320px)  {
     .container_block-No1-with-pictures {
         width: 320px;
-        height: 2179px;
+        /*height: 2179px;*/
+        height: 2250px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -196,19 +347,22 @@ body {
     
     .matser-cards {
         display: inline;
-        width: 290px;
-        height: 2179px;
-    }
+        /*width: 290px;*/
+        width: 300px;
+        /*height: 2179px;*/
+        height: 2250px;
+}
+
     .block-No1-master_class {
         width: 290px;
         height: 606px;
         flex-direction: column;
         display: flex;
-        padding-bottom: 44px;
         justify-content: center;
         align-items: flex-start;
-        gap: 50px;
-    }
+        gap: 18px;
+        padding-top: 54px;
+}
     
     .images_matser-cards {
         width: 288px;
@@ -216,9 +370,11 @@ body {
         border-radius: 20px;
         border: 5px solid var(---, #FFF);
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-    }
+        justify-content: space-evenly;
+        align-items: flex-start;
+}
 
     .font-30 {
         color: var(---, #3B3F48);
@@ -229,23 +385,33 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: 120%; /* 24px */
-    }
+}
+
+.font_h3 {
+    position: absolute;
+    left: 119px;
+    top: 66px;
+}
 
     .block-No1-text{
-        width: 277.996px;
+        /* width: 277.996px;
         height: 140px;
-        display: inline;
-    }
+        display: inline;*/
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-evenly;
+        align-items: flex-start;
+}
 
     .weight600 {
         color: var(---, #3B3F48);
-    /* Телефон/Текст 14 полужирный */
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 19.6px */
-    }
+        /* Телефон/Текст 14 полужирный */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 19.6px */
+}
 
 .weight400, .materials_list{
     color: var(---, #3B3F48);
@@ -255,12 +421,14 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 19.6px */
-    }
+}
     
-    li {
+    li ::before {
+        position: absolute;
+        left: -30px;
         display: flex;
         list-style-type: none;
-        background-image: url(../images/ci_check_mobile.svg);
+        list-style-image: url(../images/ci_check_mobile.svg);
         background-repeat: no-repeat;
         background-size: auto;
         flex-direction: column;
@@ -287,6 +455,17 @@ body {
     width: auto;
     height: auto;
 }
+
+.button_block {
+    display: flex;
+    justify-content: center;
+    padding-left: 89px;
+}
+
+.button_more_master-classes {
+    display: flex;
+    justify-content: center;
+}
 .button_block-No_1more_master-classes {
     display: inline-flex;
     padding: 10px 20px;
@@ -295,7 +474,7 @@ body {
     gap: 10px;
     border-radius: 10px;
     background: var(---, #0E0949);
-    Тень для синей кнопки 
+    /* Тень для синей кнопки */
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
     color: var(---, #FFF);
     /* Телефон/Кнопка */
@@ -308,5 +487,28 @@ body {
     width: auto;
     height: auto;
 }
+
+.price700 {
+    color: var(---, #3B3F48);
+    /* Телефон/Стоимость */
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+}
+
+.weight700 {
+    color: #EB6033;
+
+    /* Телефон/Стоимость */
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+}
+
 
 /*# sourceMappingURL=index.css.map */
