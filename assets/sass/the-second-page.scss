@@ -2,12 +2,6 @@
 @import "./extends";
 
 @font-face {
-  font-family: "Raleway";
-  src: url(../fonts/raleway-18.woff), url(../fonts/raleway-18.woff2);
-  font-weight: 700;
-}
-
-@font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Bold.woff), url(../fonts/Montserrat-Bold.woff2);
   font-weight: 700;
@@ -49,7 +43,7 @@ body {
 
 .page {
   &__title {
-    margin: 100px 0 80px 0;
+    margin: 90px 0 90px 0;
   }
 }
 
@@ -75,12 +69,16 @@ body {
 }
 
 .content {
-  &__title {
+  &__title,
+  &__title_hidden {
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
     font-weight: 500;
     font-size: 1.875rem;
     line-height: 1.4;
+    &_hidden {
+      display: none;
+    }
   }
   &__text {
     margin-block-start: 0.5em;
@@ -113,7 +111,6 @@ body {
   &__price_color {
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
-    font-family: "Raleway";
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.4;
@@ -158,6 +155,12 @@ body {
   body {
     font-size: 14px;
   }
+  .title {
+    font-size: 2rem;
+  }
+  .page__title {
+    margin: 70px 0 70px 0;
+  }
   .container {
     width: 100%;
     max-width: 711px;
@@ -168,21 +171,34 @@ body {
     margin-bottom: 70px;
     gap: 25px;
   }
-  .content__item {
-    line-height: 1.2;
+  .section-inner_s {
+    gap: 110px;
   }
-  .title {
-    font-size: 2rem;
+  .img,
+  .img_s {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .img {
+    max-width: 351px;
+  }
+  .img_s {
+    max-width: 245px;
   }
   .content__title {
     font-size: 1.57rem;
   }
   .content__text_m,
-  .content__text_ms,
+  .content__text_s,
   .content__item {
     font-size: 1rem;
   }
+  .content__item {
+    line-height: 1.2;
+  }
   .content__price {
+    margin-block-start: 0.2em;
+    margin-block-end: 0.5em;
     font-size: 1.42rem;
   }
   .btn,
@@ -192,28 +208,80 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 1.42rem;
+  }
+  .page__title {
+    margin: 50px 0 50px 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 290px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
   .section-inner {
     display: flex;
-    flex-flow: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 0;
   }
-  h3 {
-    order: 1;
+  .img,
+  .img_s {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  img {
-    order: 2;
+  .img {
+    max-width: 288px;
+  }
+  .img_s {
+    max-width: 201px;
+  }
+  .content__title {
+    display: none;
+  }
+  .content__title_hidden {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.42rem;
+  }
+  .content__text {
+    margin-top: 0;
+  }
+  .content__text_m,
+  .content__text_s,
+  .content__item {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .content__price,
+  .content__price_color {
+    margin-block-start: 0.1em;
+    font-size: 1.14rem;
+    line-height: 1.2;
+  }
+  .button-buy {
+    display: flex;
+  }
+  .btn {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.14rem;
+  }
+  .btn,
+  .btn-back {
+    border-radius: 10px;
+  }
+  .btn-back {
+    font-size: 0.85rem;
+  }
+  .button-back {
+    margin-bottom: 50px;
   }
 }
-
-// @media (max-width: 480px) {
-//   .section-inner {
-//     display: flex;
-//     flex-flow: wrap;
-//   }
-//   .content__title {
-//     order: 1;
-//   }
-//   .img {
-//     order: 2;
-//   }
-// }
