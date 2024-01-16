@@ -104,8 +104,8 @@ ul{
     margin-block-start: 0.2em;
     margin-block-end: 0.2em;
   list-style-type: none;
-  list-style-image: url(../images/Vector-min.png);*/
-}
+  list-style-image: url(../images/Vector-min.png);
+
 ::marker {
    /* margin-block-start: 0.2em;
     margin-block-end: 0.2em;
@@ -113,7 +113,7 @@ ul{
     list-style-image: url(../images/Vector-min.png);
     width: 24px;
 height: 24px;*/
-}
+
 
 .weight600 {
     font-family: 'Montserrat';
@@ -132,7 +132,7 @@ height: 24px;*/
     font-style: normal;
     font-weight: 400;
     color: var(---, #3B3F48);
-   line-height: 120%;
+    line-height: 120%;
     /* margin: 0px;
     padding: 0px;*/
 }
@@ -208,8 +208,8 @@ height: 24px;*/
     line-height: 140%;
 }
 
-@media all and (max-width: 320px) {
-    /*body {
+@media screen and (max-width: 320px) {
+   /* body {
     width: 320px;
     height: 4090px;
 }*/
@@ -231,10 +231,9 @@ height: 24px;*/
         align-items: center;
 }
     .matser-cards {
-        flex-direction: column;
-        align-items: center;
+        display: inline;
         width: 290px;
-        height: 606px;
+        height: 2179px;
     }
     .block-No1-master_class {
         width: 290px;
@@ -262,14 +261,16 @@ height: 24px;*/
         text-align: center;
         /* Телефон/H3 */
         font-family: 'Montserrat';
-        font-size: 20px!important;
+        font-size: 20px;
         font-style: normal;
         font-weight: 500;
         line-height: 120%; /* 24px */
     }
 
     .block-No1-text{
-
+        width: 277.996px;
+        height: 140px;
+        display: inline;
     }
 
     .weight600 {
@@ -282,23 +283,7 @@ height: 24px;*/
     line-height: 140%; /* 19.6px */
     }
 
-    .weight400 {
-        color: var(---, #3B3F48);
-    /* Телефон/Текст 14 */
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    }
-
-   .materials_list {
-    width: 277.996px;
-    height: 140px;
-    list-style-type: none;
-    list-style-image: url(../images/ci_check.png);
-    padding-inline-start: revert;
-    width: 218.059px;
+.weight400, .materials_list{
     color: var(---, #3B3F48);
     /* Телефон/Текст 14 */
     font-family: Montserrat;
@@ -306,6 +291,73 @@ height: 24px;*/
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 19.6px */
+    }
+
+    li .materials_list {
+    /*width: 277.996px;
+    height: 140px;
+    list-style-type: none;
+    list-style-image: url(../images/ci_check.png);
+    width: 20.005px;
+    height: 20px;
+    padding-inline-start: revert;
+    width: 218.059px;*/
+    display: inline-block;
+    width: 277.996px;
+    height: 140px;
+    list-style-type: none;
+    list-style-image: url(../images/ci_check.svg);
+    width: 20.005px;
+    height: 20px;
+    margin: left 0;
+    width: 218.059px;
+    display: inline-block;
+}
+
+.button_block-No1 {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(---, #0E0949);
+    /* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: var(---, #FFF);
+    /* Телефон/Кнопка */
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
    }
+.button_block-No_1more_master-classes {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(---, #0E0949);
+    /* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: var(---, #FFF);
+    /* Телефон/Кнопка */
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+}
+.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
+    border: 3px solid  var(---, #FFF)
+}
 }
 /*# sourceMappingURL=index.css.map */
