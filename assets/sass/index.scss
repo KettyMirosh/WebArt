@@ -4,8 +4,9 @@
 $font-stack:'Montserrat', sans-serif;
 
 
+
 //Для форм:
-$background-white:#F8FCFF;  //белый
+$background-white:white;  //белый
 $background-blue:#E4F1FA;  //голубой
 $background-lightblue:#F8FCFF;  //светло-голубой
 $background-darkblue:#0E0949;  //cиний
@@ -19,8 +20,8 @@ $color-grey: rgba(59, 63, 72, 1);
   //Cлайдер
   .slider {
     height: 40%;
-    background-color: white;
-    margin-top: 15%;
+    background-color:$background-white;
+    margin-top: 20%;
     margin-bottom: 10%;
 
     .slider__h2 {
@@ -42,7 +43,7 @@ $color-grey: rgba(59, 63, 72, 1);
   //блок фотографий
   .slider__block{
     display: flex;
-    background-color: white;
+    background-color: $background-white;
     overflow-x: scroll;
     padding: 5px;
     box-sizing: border-box;
@@ -104,7 +105,7 @@ $color-grey: rgba(59, 63, 72, 1);
     display: flex;
     height: 80px;
     flex-shrink: 0;
-    background: var(---, #e4f1fa);
+    background-color:$background-blue;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 20%;
@@ -130,18 +131,6 @@ $color-grey: rgba(59, 63, 72, 1);
         font-family: $font-stack;
       }
   }
-  .footer_link{
-    color: #3B3F48;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    align-self: center;
-    padding-left: 5px;
-    
-    font-family: $font-stack;
-  }
-
-
   
 //логотип
   .footer__logo {
@@ -157,3 +146,280 @@ $color-grey: rgba(59, 63, 72, 1);
     align-self: center;
   }
 
+
+  /* Медиазапрос для планшетов */
+  @media (min-width: 768px) and (max-width: 900px) {
+   //Cлайдер
+   .slider {
+    height: 30%;
+    background-color: $background-white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    .slider__h2 {
+        color: #3B3F48;
+        display: flex;
+        justify-content: center;
+        
+    
+        font-family: $font-stack;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 50.4px */
+      }
+
+  }
+
+
+  //блок фотографий
+  .slider__block{
+    display: flex;
+    background-color: $background-white;
+    overflow-x: scroll;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  //фотографии
+  .slider__images{
+    max-width: 461px; 
+    height: 400px; 
+    padding: 5px;
+    box-sizing: border-box; 
+  }
+
+/*модальное окошко  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  padding-top: 50%; /* Указывает отступ от верха */
+}
+
+.modal__close {
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.modal:target {
+  display: block;
+}
+
+/* Стили для отображения модального окна, когда указанный элемент является :target */
+:target {
+  display: block;
+}
+
+
+  //футер
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 80px;
+    flex-shrink: 0;
+    background-color: $background-blue;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+//Сделано ученицами 
+    .footer__text{
+        color: #3B3F48;
+        display: flex;
+        justify-content: start;
+        align-self: center;
+        padding:10px ;
+        font-size: 14px;
+        
+        font-family: $font-stack;
+      }
+      //itgirls
+      .footer__link{
+        color: #3B3F48;
+        display: flex;
+        justify-content: start;
+        text-decoration: none;
+        align-self: center;
+        padding-left: 5px;
+        
+        font-family: $font-stack;
+      }
+  }
+
+//логотип
+  .footer__logo {
+    justify-content: space-around;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    padding-right: 40px;
+  }
+  //логотип телеграмм
+  .footer__simbol-telega {
+    justify-content:space-around;
+    align-self: center;
+  }
+  
+
+  }
+
+  //Версия для мобильных девайсов
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    //Cлайдер
+    .slider {
+     height: 20%;
+     background-color: $background-white;
+     margin-top: 10%;
+     margin-bottom: 10%;
+ 
+     .slider__h2 {
+         color: #3B3F48;
+         display: flex;
+         justify-content: center;
+         
+     
+         font-family: $font-stack;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 120%; /* 50.4px */
+       }
+ 
+   }
+ 
+ 
+   //блок фотографий
+   .slider__block{
+     display: flex;
+     background-color: $background-white;
+     overflow-x: scroll;
+     padding: 5px;
+     box-sizing: border-box;
+     flex-shrink: 0;
+   }
+   //фотографии
+   .slider__images{
+     max-width: 288px; 
+     height: 250px; 
+     padding: 5px;
+     box-sizing: border-box; 
+   }
+ 
+ /*модальное окошко  */
+ .modal {
+   display: none;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.7);
+ }
+ 
+ .modal__img {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 400px;
+   padding-top: 50%; /* Указывает отступ от верха */
+ }
+ 
+ .modal__close {
+   position: fixed;
+   top: 100px;
+   right: 25px;
+   font-size: 40px;
+   font-weight: bold;
+   color: #ffffff;
+   text-decoration: none;
+   padding: 10px;
+   cursor: pointer;
+ }
+ 
+ .modal:target {
+   display: block;
+ }
+ 
+ /* Стили для отображения модального окна, когда указанный элемент является :target */
+ :target {
+   display: block;
+ }
+ 
+ 
+   //футер
+   .footer {
+     display: flex;
+     justify-content: start;
+     align-content: start;
+     height: 80px;
+     flex-shrink: 0;
+     background-color:$background-blue;
+     padding-top: 2%;
+     padding-bottom: 1%;
+     padding-left: 3%;
+ //Сделано ученицами 
+     .footer__text{
+         color: #3B3F48;
+         display: flex;
+         justify-content: center;
+         align-self: center;
+         padding:10px ;
+         font-size: 12px;
+         
+         font-family: $font-stack;
+       }
+       //itgirls
+       .footer__link{
+         color: #3B3F48;
+         display: flex;
+         justify-content: center;
+         text-decoration: none;
+         align-self: center;
+         padding-left: 5px;
+         font-size: 12px;
+         
+         font-family: $font-stack;
+       }
+   }
+ 
+ //логотип
+   .footer__logo {
+     justify-content: start;
+     width: 70px;
+     height: 70px;
+     flex-shrink: 0;
+     padding-right: 20px;
+   }
+   //логотип телеграмм
+   .footer__simbol-telega {
+     align-self: center;
+   }
+   
+ 
+   }
+ 
+ 
