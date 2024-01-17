@@ -324,7 +324,7 @@ body {
 }
 }
 
-@media screen and (max-width: 320px)  {
+@media screen and (max-width: 320px) {
     .container_block-No1-with-pictures {
         width: 320px;
         /*height: 2179px;*/
