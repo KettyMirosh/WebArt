@@ -1,32 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@100;400;500;600&family=Pacifico&family=Roboto+Slab&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@100;400;500;600&family=Pacifico&family=Raleway:wght@700&family=Roboto+Slab&display=swap');
 
-
-
 html {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 .container_block-No1-with-pictures {
-    background:var(---, #E4F1FA);
     width: 100%;
     max-width: 1920px;
     height: 2030px;
+    background: #e4f1fa;
 }
 
 .matser-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
-   /*width: 100%;
+    /*width: 100%;
     max-width: 1147px;*/
-    gap: 3.125em;
+    gap: 3.1em;
 }
 
 .block-No1-h2 {
@@ -42,19 +39,19 @@ body {
 
 .block-No1-master_class {
     display: flex;
-   /* width: 100%;
-    max-width: 1147px;
-    height: 444px;*/
     padding-bottom: 44px;
     justify-content: center;
+    gap: 3.1em;
+    /* width: 100%;
+    max-width: 1147px;
+    height: 444px;*/
     /*align-items: flex-start;*/
-    gap: 3.125em;
 }
 
-.block-No1-text {
+/*.block-No1-text {
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
-}
+}*/
 
 .images_matser-cards {
     width: 100%;
@@ -62,7 +59,7 @@ body {
 }
 
 .font-30, .font-30-320 {
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     font-family: 'Montserrat';
     font-size: 30px;
     font-style: normal;
@@ -75,29 +72,29 @@ body {
 }
 
 .materials_list {
-    margin-block-start: 0.2em;
-    margin-block-end: 0.2em;
+    /* margin-block-start: 0.2em;
+    margin-block-end: 0.2em;*/
     list-style-image: url(../images/ci_check.svg);
-    padding-inline-start: revert;
+    /*padding-inline-start: revert;*/
 }
 
 .weight600 {
+    color: #3b3f48;
     font-family: 'Montserrat';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    color: var(---, #3B3F48);
     /*margin: 0px;
     padding: 0px;*/
 }
 
 .weight400,  .materials_list{
+    color: #3b3f48;
     font-family: 'Montserrat';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    color: var(---, #3B3F48);
     line-height: 120%;
     /* margin: 0px;
     padding: 0px;*/
@@ -112,9 +109,9 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 15px;
-    background: var(---, #0E0949);
+    background: #0e0949;
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
-    color: var(---, #FFF);
+    color: #fff;
     /* Кнопка */
     font-family: 'Montserrat';
     font-size: 18px;
@@ -132,10 +129,10 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 15px;
-    background: var(---, #0E0949);
+    background: #0e0949;
     /* Тень для синей кнопки */
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
-    color: var(---, #FFF);
+    color: #fff;
     /* Кнопка */
     font-family: 'Montserrat';
     font-size: 18px;
@@ -147,11 +144,11 @@ body {
 }
 
 .button_block-No_1more_master-classes:hover, .button_block-No1:hover {
-    border: 3px solid  var(---, #FFF)
+    border: 3px solid   #fff;
 }
 
 .price700 {
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     /* Стоимость */
     font-family: 'Raleway';
     font-size: 24px;
@@ -161,7 +158,7 @@ body {
 }
 
 .weight700 {
-    color: #EB6033;
+    color: #eb6033;
     /* Стоимость */
     font-family: 'Raleway';
     font-size: 24px;
@@ -172,12 +169,11 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .container_block-No1-with-pictures {
-        background:var(---, #E4F1FA);
-        width: 100%;
-        max-width: 768px;
-        height: 1632px;
-        padding: 0 30px;
+.container_block-No1-with-pictures {
+    background: #e4f1fa;
+    max-width: 768px;
+    height: 1632px;
+    padding: 0 30px;
 }
 
 .matser-cards {
@@ -193,7 +189,7 @@ body {
     align-self: center;
     text-align: center;
     padding: 3%;       
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     /* МП/H2 */
     font-family: 'Montserrat';
     font-size: 28px;
@@ -218,12 +214,12 @@ body {
     max-width: 315px;
     height: 246px;
     border-radius: 20px;
-    border: 5px solid var(---, #FFF);
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    border: 5px solid #fff;
+    background: url(<path-to-image>), #d3d3d3 50% / cover no-repeat;
 }
 
 .font-30 {
-    color: var(---, #3B3F48);
+    color: #3b3f48;
 /* МП/H3 */
     font-family: 'Montserrat';
     font-size: 22px;
@@ -239,7 +235,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 16.8px */
-    color: var(---, #3B3F48);
+    color: #3b3f48;
 }
 
 .weight400,  .materials_list{
@@ -249,7 +245,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 16.8px */
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     
 }
 
@@ -260,10 +256,10 @@ body {
     gap: 10px;
     padding: 10px 20px;
     border-radius: 12px;
-    background: var(---, #0E0949);
+    background: #0e0949;
     /* Тень для синей кнопки */
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
-    color: var(---, #FFF);
+    color: #fff;
     /* МП/Кнопка */
     font-family: Montserrat;
     font-size: 16px;
@@ -284,10 +280,10 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 12px;
-    background: var(---, #0E0949);
+    background: #0e0949;
 /* Тень для синей кнопки */
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
-    color: var(---, #FFF);
+    color: #fff;
     /* МП/Кнопка */
     font-family: 'Montserrat';
     font-size: 16px;
@@ -298,11 +294,11 @@ body {
 }
 
 .button_block-No_1more_master-classes:hover, .button_block-No1:hover {
-    border: 2px solid  var(---, #FFF)
+    border: 2px solid  #fff;
 }
 
 .price700 {
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     /* МП/Стоимость */
     font-family: Montserrat;
     font-size: 20px;
@@ -312,7 +308,7 @@ body {
 }
 
 .weight700 {
-    color: #EB6033;
+    color: #eb6033;
     /* МП/Стоимость */
     font-family: 'Montserrat';
     font-size: 20px;
@@ -323,98 +319,101 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    .container_block-No1-with-pictures {
-        width: 320px;
-        /*height: 2179px;*/
-        height: 2400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.container_block-No1-with-pictures {
+    width: 320px;
+    /*height: 2179px;*/
+    height: 2400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-    .block-No1-h2 {
-        color: var(---, #3B3F48);
-        /* Телефон/H2 */
-        padding-top: 40px;
-        font-family: 'Montserrat';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 120%; /* 24px */
+.block-No1-h2 {
+    color: #3b3f48;
+    /* Телефон/H2 */
+    padding-top: 40px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
 }
     
-    .matser-cards {
-        /*display: inline;
-        /*width: 290px;*/
-        width: 300px;
-        /*height: 2179px;*/
-        height: 2400px;
+.matser-cards {
+    /*display: inline;
+    /*width: 290px;*/
+    width: 100%;
+    max-width: 300px;
+    /*height: 2179px;*/
+    height: 2400px;
 }
 
-    .block-No1-master_class {
-        /*width: 290px;
-        height: 606px;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 18px;
-        padding-top: 54px;*/
-        width: 290px;
-        height: 606px;
-        flex-direction: column;
-        display: flex;
-        gap: 6px;
-        padding-top: 54px;
-        align-items: center;
+.block-No1-master_class {
+    /*width: 290px;
+    height: 606px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    padding-top: 54px;*/
+    width: 100%;
+    max-width: 290px;
+    height: 606px;
+    flex-direction: column;
+    display: flex;
+    gap: 6px;
+    padding-top: 54px;
+    align-items: center;
 }
     
-    .images_matser-cards {
-        width: 288px;
-        height: 201px;
-        border-radius: 20px;
-        border: 5px solid var(---, #FFF);
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
+.images_matser-cards {
+    width: 100%;
+    max-width: 288px;
+    height: 201px;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
-    .font-30 {
-        display: none;
-        color: var(---, #3B3F48);
-        text-align: center;
-        /* Телефон/H3 */
-        font-family: 'Montserrat';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 120%; /* 24px */
+.font-30 {
+    display: none;
+    color: #3b3f48;
+    text-align: center;
+    /* Телефон/H3 */
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
 }
 
 .font-30-320 {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     font-family: 'Montserrat';
     font-weight: 500;
     line-height: 120%; /* 24px */
 }
 
-    .block-No1-text{
-        /* width: 277.996px;
-        height: 140px;
-        display: inline;*/
-        display: flex;
-        flex-direction: column; 
-        justify-content: space-evenly;
-        align-items: flex-start;
+.block-No1-text{
+    /* width: 277.996px;
+    height: 140px;
+    display: inline;*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
     .weight600 {
-        color: var(---, #3B3F48);
+        color: #3b3f48;
         /* Телефон/Текст 14 полужирный */
         font-family: Montserrat;
         font-size: 14px;
@@ -424,7 +423,7 @@ body {
 }
 
 .weight400, .materials_list{
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     /* Телефон/Текст 14 */
     font-family: 'Montserrat';
     font-size: 14px;
@@ -451,10 +450,10 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    background: var(---, #0E0949);
+    background: #0e0949;
     /* Тень для синей кнопки */
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
-    color: var(---, #FFF);
+    color: #fff;
     /* Телефон/Кнопка */
     font-family: 'Montserrat';
     font-size: 14px;
@@ -483,10 +482,10 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    background: var(---, #0E0949);
+    background:  #0e0949;
     /* Тень для синей кнопки */
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
-    color: var(---, #FFF);
+    color: #fff;
     /* Телефон/Кнопка */
     font-family: 'Montserrat';
     font-size: 14px;
@@ -499,7 +498,7 @@ body {
 }
 
 .price700 {
-    color: var(---, #3B3F48);
+    color: #3b3f48;
     /* Телефон/Стоимость */
     font-family: 'Montserrat';
     font-size: 16px;
@@ -509,7 +508,7 @@ body {
 }
 
 .weight700 {
-    color: #EB6033;
+    color: #eb6033;
 
     /* Телефон/Стоимость */
     font-family: 'Montserrat';
