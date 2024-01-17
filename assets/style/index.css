@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 /* Медиазапрос для компьютеров и ноутбуков */
 @media (min-width: 901px) {
+
+body {
+    background-color: #E4F1FA;
+}
+
 h1 {
     color: var(---, #3B3F48);
     font-family: "Montserrat", sans-serif;
@@ -260,6 +265,9 @@ header {
 /* Медиазапрос для планшетов */
 @media (min-width: 768px) and (max-width: 900px) {
 
+body {
+    background-color: #E4F1FA;
+}
 h1 {
     color: var(---, #3B3F48);
     font-family: "Montserrat", sans-serif;
