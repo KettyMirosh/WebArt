@@ -1,129 +1,129 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-/* Медиазапрос для компьютеров */
+/* Медиазапрос для компьютеров и ноутбуков */
 @media (min-width: 901px) {
 h1 {
-  color: var(---, #3B3F48);
-  font-family: "Montserrat", sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 60px */
-  margin-bottom: -5%;
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 60px */
+    margin-bottom: -5%;
 }
 
 h2 {
-  color: var(---, #3B3F48);
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%; /* 50.4px */
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 50.4px */
 }
 
 h3 {
-  color: var(---, #3B3F48);
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 42px */
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 42px */
 }
 
 header {
-  margin-right: 18.75%;
-  margin-left: 18.75%;
-  justify-content: space-between;
-  align-items: center;
-  display: grid;
-  grid-template-areas: "nav_logo nav_links telegram_header";
-  grid-template-columns: 15% 70% 10%;
+    margin-right: 18.75%;
+    margin-left: 18.75%;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "nav_logo nav_links telegram_header";
+    grid-template-columns: 15% 70% 10%;
 }
 
 .nav_logo {
-  height: auto;
-  width: 1rem;
+    height: auto;
+    width: 1rem;
 }
 
 .nav_links {
-  display: flex;
-  text-align: center;
-  list-style: none;
-  gap: 5%;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 5%;
 }
 
 .nav_links li a {
-  text-decoration: none;
-  color: var(---, #3B3F48);
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
+    text-decoration: none;
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
 }
 
 .main_container {
-  margin-right: 18.75%;
-  margin-left: 18.75%;
-  height: 60vh;
+    margin-right: 18.75%;
+    margin-left: 18.75%;
+    height: 60vh;
 }
 
 .main_scr {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .main_scr_text {
-  text-align: left;
-  align-self: center;
+    text-align: left;
+    align-self: center;
 }
 
 .main_scr_text p {
-  color: var(---, #3B3F48);
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 28px */
-  margin-top: -5%;
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    margin-top: -5%;
 }
 
 .main_scr_button {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%; /* 25.2px */
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-flex;
-  padding: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 15px;
-  background: var(---, #0E0949);
-  box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.4);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(---, #0E0949);
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.4);
 }
 
 .main_img {
-  width: 90%;
-  height: 60vh;
+    width: 90%;
+    height: 60vh;
 }
 
 .about {
-  background-color: white;
-  height: 80vh;
+    background-color: white;
+    height: 80vh;
 }
 
 .about_artist {
-  padding-top: 8%;
-  margin-right: 18.75%;
-  margin-left: 18.75%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+    padding-top: 8%;
+    margin-right: 18.75%;
+    margin-left: 18.75%;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .photo_art {
@@ -133,13 +133,13 @@ header {
 }
 
 .about_text p {
-  color: var(---, #3B3F48);
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 33.6px */
-  margin-top: -1%;
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    margin-top: -1%;
 }
 
 .slider {
@@ -259,142 +259,142 @@ header {
 }
 /* Медиазапрос для планшетов */
 @media (min-width: 768px) and (max-width: 900px) {
-  
-    h1 {
-        color: var(---, #3B3F48);
-        font-family: "Montserrat", sans-serif;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 120%; /* 60px */
-        margin-bottom: -5%;
-      }
-      
-      h2 {
-        color: var(---, #3B3F48);
-        font-family: "Montserrat", sans-serif;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%; /* 50.4px */
-      }
-      
-      h3 {
-        color: var(---, #3B3F48);
-        font-family: "Montserrat", sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 42px */
-      }
-      
-      header {
-        margin-left: 5%;
-        justify-content: space-between;
-        align-items: center;
-        display: grid;
-        grid-template-areas: "nav_logo nav_links telegram_header";
-        grid-template-columns: 15% 70% 10%;
-      }
-      
-      .nav_logo {
-        height: auto;
-        width: 1rem;
-      }
-      
-      .nav_links {
-        display: flex;
-        text-align: center;
-        list-style: none;
-        gap: 5%;
-      }
-      
-      .nav_links li a {
-        text-decoration: none;
-        color: var(---, #3B3F48);
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%;
-      }
-      
-      .main_container {
-        margin-left: 5%;
-        height: 60vh;
-      }
-      
-      .main_scr {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-      
-      .main_scr_text {
-        text-align: left;
-        align-self: center;
-      }
-      
-      .main_scr_text p {
-        color: var(---, #3B3F48);
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%; /* 28px */
-        margin-top: -5%;
-      }
-      
-      .main_scr_button {
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%; /* 25.2px */
-        text-transform: uppercase;
-        text-decoration: none;
-        display: inline-flex;
-        padding: 15px 30px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 15px;
-        background: var(---, #0E0949);
-        box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.4);
-      }
-      
-      .main_img {
-        width: 90%;
-        height: 60vh;
-      }
-      
-      .about {
-        background-color: white;
-        height: 80vh;
-      }
-      
-      .about_artist {
-        padding-top: 8%;
-        margin-left: 5%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-      }
-      
-      .photo_art {
-          height: 60vh;
-          display: block;
-          margin: 0 auto;
-      }
-      
-      .about_text p {
-        color: var(---, #3B3F48);
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%; /* 33.6px */
-        margin-top: -1%;
-      }
+
+h1 {
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 60px */
+    margin-bottom: -5%;
+}
+
+h2 {
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 50.4px */
+}
+
+h3 {
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 42px */
+}
+
+header {
+    margin-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "nav_logo nav_links telegram_header";
+    grid-template-columns: 15% 70% 10%;
+}
+
+.nav_logo {
+    height: auto;
+    width: 1rem;
+}
+
+.nav_links {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 5%;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.main_container {
+    margin-left: 5%;
+    height: 60vh;
+}
+
+.main_scr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main_scr_text {
+    text-align: left;
+    align-self: center;
+}
+
+.main_scr_text p {
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    margin-top: -5%;
+}
+
+.main_scr_button {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(---, #0E0949);
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.4);
+}
+
+.main_img {
+    width: 90%;
+    height: 60vh;
+}
+
+.about {
+    background-color: white;
+    height: 80vh;
+}
+
+.about_artist {
+    padding-top: 8%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.photo_art {
+    height: 60vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.about_text p {
+    color: var(---, #3B3F48);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    margin-top: -1%;
+}
 
     .slider {
     height: 30%;
