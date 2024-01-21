@@ -5,7 +5,6 @@
 $font-stack:'Montserrat', sans-serif;
 
 
-
 //Для форм:
 $background-white:white;  //белый
 $background-blue:#E4F1FA;  //голубой
@@ -15,14 +14,23 @@ $background-darkblue:#0E0949;  //cиний
 //Для текста:
 $color-white:rgba(255, 255, 255, 1) ; 
 $color-red: rgba(235, 96, 51, 1);
-$color-grey: rgba(59, 63, 72, 1);
+$color-grey: #3b3f48;
 
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E4F1FA;
+  margin: 0;
+  padding: 0;   
+}
 
 //kiki part
 
 h1{
-  color: var(---, #3B3F48);
-  font-family: 'Montserrat', sans-serif;
+  color:  $color-grey;
+  font-family: $font-stack;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -31,8 +39,8 @@ h1{
 }
 
 h2 {
-  color: var(---, #3B3F48);
-  font-family: 'Montserrat', sans-serif;
+  color:  $color-grey;
+  font-family: $font-stack;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
@@ -40,8 +48,8 @@ h2 {
 }
 
 h3 {
-  color: var(---, #3B3F48);
-  font-family: 'Montserrat', sans-serif;
+  color:  $color-grey;
+  font-family: $font-stack;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -51,6 +59,7 @@ h3 {
 header {
   margin-right: 18.75%;
   margin-left: 18.75%;
+  margin-top: 2%;
   justify-content: space-between;
   align-items: center;
   display: grid;
@@ -70,8 +79,8 @@ header {
 }
 .nav_links li a {
   text-decoration: none;
-  color: var(---, #3B3F48);
-  font-family: 'Montserrat', sans-serif;
+  color:  $color-grey;
+  font-family: $font-stack;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -93,8 +102,8 @@ header {
   align-self: center;
 }
 .main_scr_text p {
-  color: var(---, #3B3F48);
-  font-family: 'Montserrat', sans-serif;
+  color:  $color-grey;
+  font-family: $font-stack;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -105,7 +114,7 @@ header {
 .main_scr_button {
 
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-stack;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -118,7 +127,7 @@ header {
   align-items: center;
   gap: 10px;
   border-radius: 15px;
-  background: var(---, #0E0949);
+  background:  #0E0949;
   box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
 }
 
@@ -146,8 +155,8 @@ header {
 }
 
 .about_text p {
-  color: var(---, #3B3F48);
-  font-family: 'Montserrat', sans-serif;
+  color: $color-grey;
+  font-family: $font-stack;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -155,17 +164,177 @@ header {
   margin-top: -1%;
 }
 
+//block no1 with pictures
+.container_block-No1-with-pictures {
+  width: 100%;
+  max-width: 1920px;
+  height: 2030px;
+  background: #e4f1fa;
+}
+
+.matser-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*width: 100%;
+  max-width: 1147px;*/
+  gap: 3.1em;
+}
+
+.block-No1-h2 {
+  color: $color-grey;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  padding: 3%;   
+}
+
+.block-No1-master_class {
+  display: flex;
+  padding-bottom: 44px;
+  justify-content: center;
+  gap: 3.1em;
+  /* width: 100%;
+  max-width: 1147px;
+  height: 444px;*/
+  /*align-items: flex-start;*/
+}
+
+/*.block-No1-text {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}*/
+
+.images_matser-cards {
+  width: 100%;
+  max-width: 570px;
+}
+
+.font-30, .font-30-320 {
+  color: $color-grey;
+  font-family: $font-stack;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.font-30-320, .font-30-320_320 {
+  display: none;
+}
+
+.materials_list {
+  /* margin-block-start: 0.2em;
+  margin-block-end: 0.2em;*/
+  list-style-image: url(../images/ci_check.svg);
+  /*padding-inline-start: revert;*/
+}
+
+.weight600 {
+  color: $color-grey;
+  font-family: $font-stack;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /*margin: 0px;
+  padding: 0px;*/
+}
+
+.weight400,  .materials_list{
+  color: $color-grey;
+  font-family: $font-stack;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* margin: 0px;
+  padding: 0px;*/
+}
+
+.button_block-No1 {
+  display: flex;
+  width: 83px;
+  height: 26px;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: #0e0949;
+  box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+  color: #fff;
+  /* Кнопка */
+  font-family: $font-stack;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; 
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button_block-No_1more_master-classes {
+  display: flex;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: #0e0949;
+  /* Тень для синей кнопки */
+  box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+  color: #fff;
+  /* Кнопка */
+  font-family: $font-stack;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 25.2px */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
+  border: 3px solid   #fff;
+}
+
+.price700 {
+  color: $color-grey;
+  /* Стоимость */
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px*/ 
+}
+
+.weight700 {
+  color: #eb6033;
+  /* Стоимость */
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+
+
 
 //scrolling-block and footer part
   //Cлайдер
   .slider {
     height: 40%;
     background-color:$background-white;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    padding-top: 12%;
+    padding-bottom: 7%;
 
     .slider__h2 {
-        color: #3B3F48;
+        color: $color-grey;
         display: flex;
         justify-content: center;
         
@@ -246,12 +415,12 @@ header {
     height: 80px;
     flex-shrink: 0;
     background-color:$background-blue;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 20%;
 //Сделано ученицами 
     .footer__text{
-        color: #3B3F48;
+        color: $color-grey;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -261,7 +430,7 @@ header {
       }
       //itgirls
       .footer__link{
-        color: #3B3F48;
+        color: $color-grey;
         display: flex;
         justify-content: center;
         text-decoration: none;
@@ -289,15 +458,306 @@ header {
 
   /* Медиазапрос для планшетов */
   @media (min-width: 768px) and (max-width: 900px) {
+
+    body {
+      background-color: #E4F1FA;
+  }
+  h1 {
+      color:  $color-grey;
+      font-family: $font-stack;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 60px */
+      margin-bottom: -5%;
+  }
+  
+  h2 {
+      color:  $color-grey;
+      font-family: $font-stack;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%; /* 50.4px */
+  }
+  
+  h3 {
+      color: $color-grey;
+      font-family: $font-stack;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%; /* 42px */
+  }
+  
+  header {
+      margin-left: 5%;
+      justify-content: space-between;
+      align-items: center;
+      display: grid;
+      grid-template-areas: "nav_logo nav_links telegram_header";
+      grid-template-columns: 15% 70% 10%;
+  }
+  
+  .nav_logo {
+      height: auto;
+      width: 1rem;
+  }
+  
+  .nav_links {
+      display: flex;
+      text-align: center;
+      list-style: none;
+      gap: 5%;
+  }
+  
+  .nav_links li a {
+      text-decoration: none;
+      color:  $color-grey;
+      font-family: $font-stack;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+  }
+  
+  .main_container {
+      margin-left: 5%;
+      height: 60vh;
+  }
+  
+  .main_scr {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .main_scr_text {
+      text-align: left;
+      align-self: center;
+  }
+  
+  .main_scr_text p {
+      color:  $color-grey;
+      font-family: $font-stack;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      margin-top: -5%;
+  }
+  
+  .main_scr_button {
+      color: $background-white;
+      font-family: $font-stack;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%; /* 25.2px */
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      padding: 15px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 15px;
+      background:  #0E0949;
+      box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.4);
+  }
+  
+  .main_img {
+      width: 90%;
+      height: 60vh;
+  }
+  
+  .about {
+      background-color: white;
+      height: 80vh;
+  }
+  
+  .about_artist {
+      padding-top: 8%;
+      margin-left: 5%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+  
+  .photo_art {
+      height: 60vh;
+      display: block;
+      margin: 0 auto;
+  }
+  
+  .about_text p {
+      color:  $color-grey;
+      font-family: $font-stack;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 33.6px */
+      margin-top: -1%;
+  }
+
+
+  //Блок мастер классы 
+  .container_block-No1-with-pictures {
+    background: #e4f1fa;
+    max-width: 768px;
+    height: 1632px;
+    padding: 0 30px;
+}
+
+.matser-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 711px;
+    height: 1632px;
+    gap: 15.098px;
+}
+.block-No1-h2 {
+    align-self: center;
+    text-align: center;
+    padding: 3%;       
+    color: $color-grey;
+    /* МП/H2 */
+    font-family: $font-stack;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+}
+
+.block-No1-master_class {
+    display: flex;
+    width: 100%;
+    max-width: 711px;
+    height: 377px;
+    gap: 15.098px;
+    padding-bottom: 44px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.images_matser-cards {
+    width: 100%;
+    max-width: 315px;
+    height: 246px;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    background: url(<path-to-image>), #d3d3d3 50% / cover no-repeat;
+}
+
+.font-30 {
+    color: $color-grey;
+/* МП/H3 */
+    font-family: $font-stack;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 30.8px */
+}
+
+.weight600 {
+    font-family: $font-stack;
+    /* МП/Текст 14 полужирный */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+    color: $color-grey;
+}
+
+.weight400,  .materials_list{
+    font-family: $font-stack;
+    /* МП/Текст 14 */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    color: $color-grey;
+    
+}
+
+.button_block-No1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: #0e0949;
+    /* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: #fff;
+    /* МП/Кнопка */
+    font-family: $font-stack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.button_more_master-classes {
+    padding-top: 50px;
+}
+
+.button_block-No_1more_master-classes {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #0e0949;
+/* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: #fff;
+    /* МП/Кнопка */
+    font-family: $font-stack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    text-transform: uppercase;
+}
+
+.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
+    border: 2px solid  #fff;
+}
+
+.price700 {
+    color: $color-grey;
+    /* МП/Стоимость */
+    font-family: $font-stack;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+}
+
+.weight700 {
+    color: #eb6033;
+    /* МП/Стоимость */
+    font-family: $font-stack;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+
    //Cлайдер
    .slider {
     height: 30%;
     background-color: $background-white;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 
     .slider__h2 {
-        color: #3B3F48;
+        color: $color-grey;
         display: flex;
         justify-content: center;
         
@@ -385,7 +845,7 @@ header {
     padding-left: 3%;
 //Сделано ученицами 
     .footer__text{
-        color: #3B3F48;
+        color: $color-grey;
         display: flex;
         justify-content: start;
         align-self: center;
@@ -396,7 +856,7 @@ header {
       }
       //itgirls
       .footer__link{
-        color: #3B3F48;
+        color: $color-grey;
         display: flex;
         justify-content: start;
         text-decoration: none;
@@ -427,15 +887,402 @@ header {
   //Версия для мобильных девайсов
 
   @media (min-width: 320px) and (max-width: 767px) {
+
+    body {
+      background-color: $background-blue;
+  }
+  h1 {
+      color: $color-grey;
+      font-family: $font-stack;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 60px */
+      margin-bottom: -5%;
+  }
+  
+  h2 {
+      color: $color-grey;
+      font-family: $font-stack;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%; /* 50.4px */
+  }
+  
+  h3 {
+      color: $color-grey;
+      font-family: $font-stack;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%; /* 42px */
+  }
+  
+  header {
+  
+margin-bottom: 3%;
+      margin-left: 3%;
+      justify-content: space-between;
+      align-items: center;
+      display: grid;
+      grid-template-areas: "nav_logo nav_links telegram_header";
+      grid-template-columns: 15% 70% 15%;
+      width: 100%;
+  }
+  
+  .nav_logo {
+      height: auto;
+     width: 50%;
+  }
+  
+  .nav_links {
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: 15%;
+      padding-right: 10px;
+
+      text-align: center;
+      list-style: none;
+     /* gap: 15%;*/
+  }
+  
+  .nav_links li a {
+      text-decoration: none;
+      color:  $color-grey;
+      font-family:$font-stack;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+  }
+
+  .main_container {
+      margin-left: 2%;
+      margin-right: 1.2%;
+      margin-bottom: -10%;
+      height: auto;
+  }
+  
+  .main_scr {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      "main_scr_img"
+      "main_scr_text";
+
+  }
+  
+  .main_scr_text {
+    grid-area: main_scr_text;
+
+      text-align: left;
+      align-self: center;
+      margin-top: -45%;
+    
+      padding-top: 5%;
+      padding-bottom: 3%;
+  }
+  .main_scr_text h2{
+    padding-top: 3%;
+  }
+  
+  .main_scr_text p {
+      color:  $color-grey;
+      font-family:$font-stack;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      padding-top: 5%;
+      margin-top: -5%;
+  }
+  
+  .main_scr_button {
+      color: $background-white;
+      font-family: $font-stack;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%; /* 25.2px */
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      margin-top: 20px;
+      padding: 15px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 15px;
+      background-color: $background-darkblue;
+      box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.4);
+  }
+  
+  .main_img {
+    grid-area: main_scr_img;
+    width: 100%;
+    height: auto;
+  }
+  
+  .about {
+      background-color: white;
+      height: auto;
+      width: auto;
+      padding-top: 10%;
+      
+
+  }
+
+  .about_text{
+    width: 80vw;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start; 
+    padding-bottom: 3%;
+  
+  }
+  
+  .about_artist {
+    padding-top: 8%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+
+  }
+  
+  .photo_art {
+    width: 288px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+  
+  }
+  
+  .about_text p {
+    color:  $color-grey;
+    font-family:$font-stack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    margin-top: 0; 
+  
+  }
+
+  //Мастер классы 
+
+  .container_block-No1-with-pictures {
+    width: 320px;
+    /*height: 2179px;*/
+    height: 2400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-No1-h2 {
+    color: $color-grey;
+    /* Телефон/H2 */
+    padding-top: 40px;
+    font-family: $font-stack;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+}
+    
+.matser-cards {
+    /*display: inline;
+    /*width: 290px;*/
+    width: 100%;
+    max-width: 300px;
+    /*height: 2179px;*/
+    height: 2400px;
+}
+
+.block-No1-master_class {
+    /*width: 290px;
+    height: 606px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    padding-top: 54px;*/
+    width: 100%;
+    max-width: 290px;
+    height: 606px;
+    flex-direction: column;
+    display: flex;
+    gap: 6px;
+    padding-top: 54px;
+    align-items: center;
+}
+    
+.images_matser-cards {
+    width: 100%;
+    max-width: 288px;
+    height: 201px;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.font-30 {
+    display: none;
+    color: $color-grey;
+    text-align: center;
+    /* Телефон/H3 */
+    font-family: $font-stack;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+}
+
+.font-30-320 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: $color-grey;
+    font-family: $font-stack;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+}
+
+.block-No1-text{
+    /* width: 277.996px;
+    height: 140px;
+    display: inline;*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+    .weight600 {
+        color: $color-grey;
+        /* Телефон/Текст 14 полужирный */
+        font-family: $font-stack;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 19.6px */
+}
+
+.weight400, .materials_list{
+    color: $color-grey;
+    /* Телефон/Текст 14 */
+    font-family: $font-stack;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+    
+    li ::before {
+        position: absolute;
+        left: -30px;
+        display: flex;
+        list-style-type: none;
+        list-style-image: url(../images/ci_check_mobile.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        flex-direction: column;
+}
+
+.button_block-No1 {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #0e0949;
+    /* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: #fff;
+    /* Телефон/Кнопка */
+    font-family: $font-stack;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px*/ 
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+}
+
+.button_block {
+    display: flex;
+    justify-content: center;
+    padding-left: 89px;
+}
+
+.button_more_master-classes {
+    display: flex;
+    justify-content: center;
+}
+.button_block-No_1more_master-classes {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background:  #0e0949;
+    /* Тень для синей кнопки */
+    box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+    color: #fff;
+    /* Телефон/Кнопка */
+    font-family: $font-stack;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px*/
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+}
+
+.price700 {
+    color: $color-grey;
+    /* Телефон/Стоимость */
+    font-family: $font-stack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+}
+
+.weight700 {
+    color: #eb6033;
+
+    /* Телефон/Стоимость */
+    font-family: $font-stack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+
     //Cлайдер
     .slider {
      height: 20%;
      background-color: $background-white;
-     margin-top: 10%;
-     margin-bottom: 10%;
+     padding-top: 10%;
+     padding-bottom: 10%;
  
      .slider__h2 {
-         color: #3B3F48;
+         color: $color-grey;
          display: flex;
          justify-content: center;
          
@@ -523,7 +1370,7 @@ header {
      padding-left: 3%;
  //Сделано ученицами 
      .footer__text{
-         color: #3B3F48;
+         color: $color-grey;
          display: flex;
          justify-content: center;
          align-self: center;
@@ -534,7 +1381,7 @@ header {
        }
        //itgirls
        .footer__link{
-         color: #3B3F48;
+         color: $color-grey;
          display: flex;
          justify-content: center;
          text-decoration: none;

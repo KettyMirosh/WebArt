@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="assets/style/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
@@ -16,14 +17,16 @@
   <body>
     <header>
       <div class="nav_logo">
-        <img src="./assets/images/Logo_header.png" alt="Лого" />
+        <a href="index.html"
+          ><img src="./assets/images/Logo_header.png" alt="Лого"
+        /></a>
       </div>
       <nav class="nav_links">
-        <li><a href="#">Обо мне</a></li>
-        <li><a href="#">Мастер-классы</a></li>
+        <li><a href="#about_me">Обо мне</a></li>
+        <li><a href="#master-cards">Мастер-классы</a></li>
       </nav>
       <div class="telegram_header">
-        <a href="#">
+        <a href="https://t.me/Savicholga" target="_blank">
           <img src="./assets/images/telegram.svg" alt="Телеграм" />
         </a>
       </div>
@@ -48,7 +51,7 @@
           </div>
         </section>
       </div>
-      <div class="about">
+      <div class="about" id="about_me">
         <section class="about_artist">
           <div class="about_text">
             <h2>Здравствуйте!</h2>
@@ -72,6 +75,149 @@
         </section>
       </div>
     </main>
+
+    <section class="container_block-No1-with-pictures">
+      <div class="matser-cards" id="master-cards">
+        <h2 class="block-No1-h2">Мастер-классы</h2>
+        <div class="block-No1-master_class">
+          <h3 class="font-30-320">Креветка</h3>
+          <img
+            class="images_matser-cards"
+            src="assets/images/Rectangle66.png"
+            alt="Креветка"
+          />
+          <div class="block-No1-text">
+            <h3 class="font-30">Креветка</h3>
+            <div class="weight600">
+              Формат: <span class="weight400">онлайн</span>
+            </div>
+            <div class="weight600">
+              Продолжительность мастер-класса:
+              <span class="weight400">30 мин</span>
+            </div>
+            <div class="weight600">Необходимые материалы:</div>
+            <ol class="materials_list">
+              <li class="materials_list">
+                лист плотной цветной бумаги или картона формата А4,
+              </li>
+              <li class="materials_list">набор гуаши 12 цветов,</li>
+              <li class="materials_list">кисти синтетические № 4 - 10,</li>
+              <li class="materials_list">палитра,</li>
+              <li class="materials_list">салфетки,</li>
+              <li class="materials_list">баночка с водой.</li>
+            </ol>
+            <div class="weight600">
+              Доступ к мастер-классу
+              <span class="weight400">2 месяца после оплаты</span>
+            </div>
+            <div class="price700">
+              Стоимость: <span class="weight700"> 20 BYN</span>
+            </div>
+            <div class="button_block">
+              <a href="https://t.me/Savicholga" class="button_block-No1"
+                >КУПИТЬ</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="block-No1-master_class">
+          <h3 class="font-30-320">Ворона и сыр</h3>
+          <img
+            class="images_matser-cards"
+            src="assets/images/Rectangle66(1).png"
+            alt="Ворона и сыр"
+          />
+          <div class="block-No1-text">
+            <h3 class="font-30">Ворона и сыр</h3>
+            <div class="weight600">
+              Формат: <span class="weight400">онлайн</span>
+            </div>
+            <div class="weight600">
+              Продолжительность мастер-класса:
+              <span class="weight400">30 мин</span>
+            </div>
+            <div class="weight600">Необходимые материалы:</div>
+            <ol class="materials_list">
+              <li class="materials_list">
+                лист плотной цветной бумаги или картона формата А4,
+              </li>
+              <li class="materials_list">набор гуаши 12 цветов,</li>
+              <li class="materials_list">кисти синтетические № 4 - 10,</li>
+              <li class="materials_list">палитра,</li>
+              <li class="materials_list">салфетки,</li>
+              <li class="materials_list">баночка с водой.</li>
+            </ol>
+            <div class="weight600">
+              Доступ к мастер-классу
+              <span class="weight400">2 месяца после оплаты</span>
+            </div>
+            <div class="price700">
+              Стоимость: <span class="weight700"> 20 BYN</span>
+            </div>
+            <div class="button_block">
+              <a
+                href="https://t.me/Savicholga"
+                target="_blank"
+                class="button_block-No1"
+                >КУПИТЬ</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="block-No1-master_class">
+          <h3 class="font-30-320">Краб</h3>
+          <img
+            class="images_matser-cards"
+            src="assets/images/Rectangle66(2).png"
+            alt="Краб"
+          />
+          <div class="block-No1-text">
+            <h3 class="font-30">Краб</h3>
+            <div class="weight600">
+              Формат: <span class="weight400">онлайн</span>
+            </div>
+            <div class="weight600">
+              Продолжительность мастер-класса:
+              <span class="weight400">30 мин</span>
+            </div>
+            <div class="weight600">Необходимые материалы:</div>
+            <ol class="materials_list">
+              <li class="materials_list">
+                лист плотной цветной бумаги или картона формата А4,
+              </li>
+              <li class="materials_list">набор гуаши 12 цветов,</li>
+              <li class="materials_list">кисти синтетические № 4 - 10,</li>
+              <li class="materials_list">палитра,</li>
+              <li class="materials_list">салфетки,</li>
+              <li class="materials_list">баночка с водой.</li>
+            </ol>
+            <div class="weight600">
+              Доступ к мастер-классу
+              <span class="weight400">2 месяца после оплаты</span>
+            </div>
+            <div class="price700">
+              Стоимость: <span class="weight700"> 20 BYN</span>
+            </div>
+            <div class="button_block">
+              <a
+                href="https://t.me/Savicholga"
+                target="_blank"
+                class="button_block-No1"
+                >КУПИТЬ</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="button_more_master-classes">
+          <a
+            href="the-second-page.html"
+            class="button_block-No_1more_master-classes"
+            >больше мастер-классов</a
+          >
+        </div>
+      </div>
+    </section>
+
     <section class="slider">
       <h2 class="slider__h2">У всех получится!</h2>
       <div class="slider__block">
@@ -240,7 +386,10 @@
       </div>
     </section>
     <footer class="footer">
-      <img class="footer__logo" src="assets/images/logo.png" alt="Лого" />
+      <a href="index.html"
+        ><img class="footer__logo" src="assets/images/logo.png" alt="Лого"
+      /></a>
+
       <a
         href="https://t.me/Savicholga"
         target="_blank"
