@@ -15,6 +15,7 @@ $color-white:rgba(255, 255, 255, 1) ;
 $color-red: rgba(235, 96, 51, 1);
 $color-grey: #3b3f48;
 
+
 html {
   box-sizing: border-box;
 }
@@ -56,8 +57,10 @@ h3 {
 }
 
 header {
-  margin-right: 18.75%;
-  margin-left: 18.75%;
+  width: 100%;
+  max-width: 1147px;
+  height: auto;
+  margin: 0 auto;
   margin-top: 2%;
   justify-content: space-between;
   align-items: center;
@@ -87,13 +90,15 @@ header {
 }
 
 .main_container{
-  margin-right: 18.75%;
-  margin-left: 18.75%;
-  height: 60vh;
+  width: 100%;
+  max-width: 1147px;
+  height: auto;
+  margin: 0 auto;
 }
 .main_scr {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
 }
 
 .main_scr_text {
@@ -131,20 +136,32 @@ header {
 }
 
 .main_img {
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+
 }
 
 .about {
   background-color: white;
-  height: 80vh;
+  height: auto;
+
+  width: 100%;
+  margin: 0 auto;
 }
 
 .about_artist {
   padding-top: 8%;
-  margin-right: 18.75%;
-  margin-left: 18.75%;
+  padding-bottom: 8%;
+
   display: grid;
   grid-template-columns: 50% 50%;
+
+  width: 100%;
+  max-width: 1147px;
+  height: auto;
+  margin: 0 auto;
+
 }
 
 .photo_art {
@@ -166,9 +183,11 @@ header {
 //block no1 with pictures
 .container_block-No1-with-pictures {
   width: 100%;
-  max-width: 1920px;
-  height: 1790px;
+  max-width: 1147px;
+  height: auto;
+  margin: 0 auto;
   background: #e4f1fa;
+
 }
 
 .matser-cards {
@@ -285,6 +304,8 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 3%;
+  padding-bottom: 5%;
+
 }
 
 .button_block-No_1more_master-classes {
@@ -341,13 +362,14 @@ header {
   .slider {
     height: 40%;
     background-color:$background-white;
-    padding-top: 12%;
-    padding-bottom: 7%;
+    padding-top: 8%;
+    padding-bottom: 5%;
 
     .slider__h2 {
         color: $color-grey;
         display: flex;
         justify-content: center;
+        padding-bottom: 2%;
         
     
         font-family: $font-stack;
@@ -426,9 +448,13 @@ header {
     height: 80px;
     flex-shrink: 0;
     background-color:$background-blue;
+    width: 100%;
+    max-width: 1147px;
+    height: auto;
+    margin: 0 auto;
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 20%;
+    //padding-left: 20%;
 //Сделано ученицами 
     .footer__text{
         color: $color-grey;
@@ -577,24 +603,36 @@ header {
   }
   
   .main_img {
-      width: 90%;
-      height: 60vh;
+    height: auto;
+    width: 100%;
+    max-width: 383px;
+    margin:0 auto ;
   }
   
   .about {
       background-color: white;
-      height: 80vh;
+  }
+
+  header,.main_container,.main_scr,.container_block-No1-with-pictures,.about_artist,.footer{
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 711px;
   }
   
   .about_artist {
-      padding-top: 8%;
-      margin-left: 5%;
       display: grid;
       grid-template-columns: 50% 50%;
+      display: grid;
+    
+      
+      
   }
   
   .photo_art {
-      height: 60vh;
+      height: auto;
+      width: 100%;
+      max-width: 318px;
       display: block;
       margin: 0 auto;
   }
@@ -613,9 +651,9 @@ header {
   //Блок мастер классы 
   .container_block-No1-with-pictures {
     background: #e4f1fa;
-    max-width: 768px;
-    height: 1790px;
-    padding: 0 30px;
+    //max-width: 768px;
+   // height: 1790px;
+    //padding: 0 30px;
   }
   .matser-cards {
     display: flex;
@@ -760,8 +798,8 @@ header {
    .slider {
     height: 30%;
     background-color: $background-white;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 5%;
 
     .slider__h2 {
         color: $color-grey;
