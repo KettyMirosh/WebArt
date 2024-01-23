@@ -153,17 +153,17 @@ header {
 .container_block-No1-with-pictures {
   width: 100%;
   max-width: 1920px;
-  height: 2030px;
+  height: 1790px;
   background: #e4f1fa;
 }
 
 .matser-cards {
-  display: flex;
+ /* display: flex;
   flex-direction: column;
   align-items: center;
-  /*width: 100%;
-  max-width: 1147px;*/
-  gap: 3.1em;
+  width: 100%;
+  max-width: 1147px;
+  gap: 3.1em;*/
 }
 
 .block-No1-h2 {
@@ -179,19 +179,21 @@ header {
 
 .block-No1-master_class {
   display: flex;
-  padding-bottom: 44px;
+  margin-bottom: 70px;
+  /* padding-bottom: 44px; */
   justify-content: center;
   gap: 3.1em;
+  align-items: center;
   /* width: 100%;
   max-width: 1147px;
   height: 444px;*/
-  /*align-items: flex-start;*/
 }
 
-/*.block-No1-text {
+.block-No1-text {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
-}*/
+}
+
 .images_matser-cards {
   width: 100%;
   max-width: 570px;
@@ -204,6 +206,8 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+  margin-block-start: 0;
+    margin-bottom: 9px;
 }
 
 .font-30-320, .font-30-320_320 {
@@ -214,6 +218,8 @@ header {
   /* margin-block-start: 0.2em;
   margin-block-end: 0.2em;*/
   list-style-image: url(../images/ci_check.svg);
+  margin-block-start: 0;
+  margin-bottom: 0;
   /*padding-inline-start: revert;*/
 }
 
@@ -261,11 +267,17 @@ header {
   text-decoration: none;
 }
 
-.button_block-No_1more_master-classes {
+.button_more_master-classes {
   display: flex;
-  padding: 15px 30px;
   justify-content: center;
-  align-items: center;
+  padding-top: 3%;
+}
+
+.button_block-No_1more_master-classes {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  padding: 15px 30px;
   gap: 10px;
   border-radius: 15px;
   background: #0e0949;
@@ -289,7 +301,7 @@ header {
 .price700 {
   color: #3b3f48;
   /* Стоимость */
-  font-family: "Raleway";
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -299,7 +311,7 @@ header {
 .weight700 {
   color: #eb6033;
   /* Стоимость */
-  font-family: "Raleway";
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -548,7 +560,7 @@ header {
   .container_block-No1-with-pictures {
     background: #e4f1fa;
     max-width: 768px;
-    height: 1632px;
+    height: 1790px;
     padding: 0 30px;
   }
   .matser-cards {
@@ -598,6 +610,8 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 30.8px */
+    margin-block-start: 0;
+    margin-top: 0;
   }
   .weight600 {
     font-family: "Montserrat", sans-serif;
@@ -616,6 +630,8 @@ header {
     font-weight: 400;
     line-height: 120%; /* 16.8px */
     color: #3b3f48;
+    margin-block-start: 0;
+    margin-top: 0;
   }
   .button_block-No1 {
     display: flex;
@@ -637,6 +653,11 @@ header {
     text-transform: uppercase;
     text-decoration: none;
   }
+
+.button_block {
+  padding-top: 4%;
+}
+
   .button_more_master-classes {
     padding-top: 50px;
   }
@@ -943,17 +964,19 @@ header {
     margin-top: 0;
   }
   .container_block-No1-with-pictures {
-    width: 320px;
-    /*height: 2179px;*/
-    height: 2400px;
+    width: 100%;
+   /* width: 100%;
+    max-width: 767px;
+    height: 2179px;*/
+    height: 2410px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20%;
   }
   .block-No1-h2 {
     color: #3b3f48;
     /* Телефон/H2 */
-    padding-top: 40px;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -962,11 +985,13 @@ header {
   }
   .matser-cards {
     /*display: inline;
-    /*width: 290px;*/
+    width: 290px;*
     width: 100%;
     max-width: 300px;
-    /*height: 2179px;*/
-    height: 2400px;
+    /*height: 2179px;
+    height: 2400px;*/
+    width: auto;
+    height: auto;
   }
   .block-No1-master_class {
     /*width: 290px;
@@ -1022,6 +1047,7 @@ header {
     /* width: 277.996px;
     height: 140px;
     display: inline;*/
+    width: 47vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1080,10 +1106,12 @@ header {
     display: flex;
     justify-content: center;
     padding-left: 89px;
+    padding-top: 7%;
   }
   .button_more_master-classes {
-    display: flex;
-    justify-content: center;
+   /* display: flex;
+    justify-content: center;*/
+    padding-top: 11%;
   }
   .button_block-No_1more_master-classes {
     display: inline-flex;
