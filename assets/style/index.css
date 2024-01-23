@@ -241,6 +241,7 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  margin-top: 4px;
   /*margin: 0px;
   padding: 0px;*/
 }
@@ -276,6 +277,7 @@ header {
   line-height: 140%;
   text-transform: uppercase;
   text-decoration: none;
+  margin-top: 15px;
 }
 
 .button_more_master-classes {
@@ -318,6 +320,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 33.6px*/
+  margin-top: 4px;
 }
 
 .weight700 {
