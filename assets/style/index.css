@@ -101,6 +101,10 @@ header {
   margin-top: -5%;
 }
 
+.main_scr_button:hover {
+  border: 1px solid #fff;
+}
+
 .main_scr_button {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -309,7 +313,7 @@ header {
 }
 
 .button_block-No_1more_master-classes:hover, .button_block-No1:hover {
-  border: 3px solid #fff;
+  border: 1px solid #fff;
 }
 
 .price700 {
