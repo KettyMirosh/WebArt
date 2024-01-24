@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn-back, .btn {
   border-radius: 15px;
   background-color: rgb(14, 9, 73);
@@ -12,7 +13,7 @@
   cursor: pointer;
 }
 
-.btn-back:hover, .btn:hover {
+.btn-back:hover {
   border: 3px solid rgb(255, 255, 255);
 }
 
@@ -143,6 +144,16 @@ body {
 .btn {
   display: inline-flex;
 }
+
+.btn:hover {
+  border-color: #fff; /* Изменяем цвет обводки при наведении */
+}
+
+.btn {
+  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
+  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
+}
+
 .button-back {
   display: flex;
   justify-content: center;

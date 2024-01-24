@@ -115,8 +115,15 @@ header {
   margin-top: -5%;
 }
 
-.main_scr_button:hover {
-  border: 1px solid #fff;
+
+.main_scr_button:hover,.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
+  border-color: #fff; /* Изменяем цвет обводки при наведении */
+}
+
+.main_scr_button,.button_block-No_1more_master-classes, .button_block-No1{
+
+  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
+  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
 }
 
 .main_scr_button {
@@ -136,6 +143,8 @@ header {
   border-radius: 15px;
   background:  #0E0949;
   box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.40);
+
+
 }
 
 .main_img {
@@ -336,9 +345,6 @@ header {
 }
 
 
-.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
-  border: 1px solid   #fff;
-}
 
 .price700 {
   color: #3b3f48;

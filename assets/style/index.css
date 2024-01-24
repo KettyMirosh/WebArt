@@ -101,8 +101,13 @@ header {
   margin-top: -5%;
 }
 
-.main_scr_button:hover {
-  border: 1px solid #fff;
+.main_scr_button:hover, .button_block-No_1more_master-classes:hover, .button_block-No1:hover {
+  border-color: #fff; /* Изменяем цвет обводки при наведении */
+}
+
+.main_scr_button, .button_block-No_1more_master-classes, .button_block-No1 {
+  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
+  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
 }
 
 .main_scr_button {
@@ -310,10 +315,6 @@ header {
   line-height: 140%; /* 25.2px */
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
-  border: 1px solid #fff;
 }
 
 .price700 {

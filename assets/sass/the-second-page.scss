@@ -138,9 +138,19 @@ body {
 .btn {
   display: inline-flex;
   @extend %style-button;
-  &:hover {
-    @extend %button-hover;
-  }
+  //&:hover {
+   // @extend %button-hover;
+ // }
+}
+
+.btn:hover {
+  border-color: #fff; /* Изменяем цвет обводки при наведении */
+}
+
+.btn{
+
+  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
+  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
 }
 
 .button-back {
