@@ -70,7 +70,7 @@ body {
   gap: 50px;
 }
 
-.link{
+.link:hover,.link_aboutme:hover{
   border-bottom: 1px solid ;
 }
 
@@ -177,11 +177,17 @@ body {
   //}
 }
 
+.footer_background{
+  background-color: #F8FCFF;
+  max-width:100% ;
+
+}
 #footer-white{
-  background-color: white;
-  width: 1920px;
-  max-width:1920px ;
-  padding-left: 11%;
+  background-color: #F8FCFF;
+  width: 78%;
+  max-width:78% ;
+  padding-left: 15px;
+  padding-right: 15px;
 
 
 }

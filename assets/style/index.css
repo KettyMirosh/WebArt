@@ -40,6 +40,7 @@ h3 {
 }
 
 header {
+  background-color: #E4F1FA;
   width: 100%;
   max-width: 1147px;
   height: auto;
@@ -52,6 +53,13 @@ header {
   grid-template-columns: 15% 70% 10%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.telegram_header {
+  grid-area: telegram_header;
+  margin: 0 auto;
+  justify-content: end;
+  margin-right: -1%;
 }
 
 .nav_logo {
@@ -76,7 +84,16 @@ header {
   line-height: 140%;
 }
 
+.link_aboutme:hover {
+  border-bottom: 1px solid;
+}
+
+.link:hover {
+  border-bottom: 1px solid;
+}
+
 .main_container {
+  background-color: #E4F1FA;
   width: 100%;
   max-width: 1147px;
   height: auto;
@@ -140,7 +157,7 @@ header {
 }
 
 .about {
-  background-color: white;
+  background-color: #F8FCFF;
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -346,9 +363,13 @@ header {
   line-height: 140%;
 }
 
+.slider_background {
+  background-color: #F8FCFF;
+}
+
 .slider {
   height: 40%;
-  background-color: white;
+  background-color: #F8FCFF;
   padding-top: 8%;
   padding-bottom: 5%;
 }
@@ -366,7 +387,7 @@ header {
 
 .slider__block {
   display: flex;
-  background-color: white;
+  background-color: #F8FCFF;
   overflow-x: scroll;
   padding: 5px;
   box-sizing: border-box;
@@ -428,7 +449,7 @@ header {
   flex-shrink: 0;
   background-color: #E4F1FA;
   width: 100%;
-  max-width: 1147px;
+  max-width: 90%;
   height: auto;
   margin: 0 auto;
   padding-top: 2%;
@@ -439,9 +460,10 @@ header {
 .footer .footer__text {
   color: #3b3f48;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-self: center;
-  padding: 10px;
+  margin: 0 auto;
+  margin-right: 0%;
   font-family: "Montserrat", sans-serif;
 }
 .footer .footer__link {
@@ -450,7 +472,7 @@ header {
   justify-content: center;
   text-decoration: none;
   align-self: center;
-  padding-left: 5px;
+  padding-left: 7px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -570,13 +592,13 @@ header {
     margin: 0 auto;
   }
   .about {
-    background-color: white;
+    background-color: #F8FCFF;
   }
   header, .main_container, .main_scr, .container_block-No1-with-pictures, .about_artist, .footer {
     height: auto;
     margin: 0 auto;
     width: 100%;
-    max-width: 711px;
+    max-width: 90%;
   }
   .about_artist {
     display: grid;
@@ -740,7 +762,7 @@ header {
   }
   .slider {
     height: 30%;
-    background-color: white;
+    background-color: #F8FCFF;
     padding-top: 8%;
     padding-bottom: 5%;
   }
@@ -756,7 +778,7 @@ header {
   }
   .slider__block {
     display: flex;
-    background-color: white;
+    background-color: #F8FCFF;
     overflow-x: scroll;
     padding: 5px;
     box-sizing: border-box;
@@ -848,7 +870,6 @@ header {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   body {
-    background-color: #E4F1FA;
     width: 98%;
   }
   h1 {
@@ -885,6 +906,9 @@ header {
     grid-template-areas: "nav_logo nav_links telegram_header";
     grid-template-columns: 15% 70% 15%;
     width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .nav_logo {
     height: auto;
@@ -908,11 +932,11 @@ header {
     font-weight: 700;
     line-height: 140%;
   }
-  .main_container {
-    margin-left: 2%;
-    margin-right: 1.2%;
-    margin-bottom: -10%;
-    height: auto;
+  header, .main_container, .footer, .container_block-No1-with-pictures, .about {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 90%;
   }
   .main_scr {
     display: grid;
@@ -964,20 +988,22 @@ header {
     grid-area: main_scr_img;
     width: 100%;
     height: auto;
+    margin: 0 auto;
   }
   .about {
-    background-color: white;
+    background-color: #F8FCFF;
     height: auto;
     width: auto;
     padding-top: 10%;
     padding-bottom: 15%;
   }
   .about_text {
-    width: 80vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     padding-bottom: 3%;
+    margin: 0 auto;
   }
   .about_artist {
     padding-top: 8%;
@@ -985,10 +1011,13 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
   }
   .photo_art {
     width: 288px;
-    height: auto;
+    max-width: 288px;
     display: block;
     margin: 0 auto;
     padding-top: 5%;
@@ -1021,6 +1050,7 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 24px */
+    margin: 0 auto;
   }
   .matser-cards {
     /*display: inline;
@@ -1029,7 +1059,7 @@ header {
     max-width: 300px;
     /*height: 2179px;
     height: 2400px;*/
-    width: auto;
+    width: 100%;
     height: auto;
   }
   .block-No1-master_class {
@@ -1049,6 +1079,7 @@ header {
     gap: 6px;
     padding-top: 25%;
     align-items: center;
+    margin: 0 auto;
   }
   .images_matser-cards {
     width: 100%;
@@ -1072,6 +1103,7 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 24px */
+    margin: 10px;
   }
   .font-30-320 {
     display: flex;
@@ -1081,6 +1113,7 @@ header {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     line-height: 120%; /* 24px */
+    margin-top: 20px;
   }
   .block-No1-text {
     /* width: 277.996px;
@@ -1140,18 +1173,20 @@ header {
     text-transform: uppercase;
     width: auto;
     height: auto;
+    margin: 0 auto;
   }
   .button_block {
     display: flex;
     justify-content: center;
-    padding-left: 28%;
-    padding-top: 9%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   .button_more_master-classes {
     /* display: flex;
      justify-content: center;*/
-    padding-top: 11%;
-    padding-bottom: 10%;
+    padding-top: 15%;
+    padding-bottom: 20%;
   }
   .button_block-No_1more_master-classes {
     display: inline-flex;
@@ -1192,9 +1227,14 @@ header {
     font-weight: 700;
     line-height: 120%;
   }
+  .slider_background {
+    background-color: #F8FCFF;
+    width: 100%;
+    max-width: 700px;
+  }
   .slider {
     height: 20%;
-    background-color: white;
+    background-color: #F8FCFF;
     padding-top: 10%;
     padding-bottom: 10%;
   }
@@ -1210,7 +1250,7 @@ header {
   }
   .slider__block {
     display: flex;
-    background-color: white;
+    background-color: #F8FCFF;
     overflow-x: scroll;
     padding: 5px;
     box-sizing: border-box;
@@ -1277,6 +1317,7 @@ header {
     align-self: center;
     padding: 10px;
     font-size: 12px;
+    margin-left: 25px;
     font-family: "Montserrat", sans-serif;
   }
   .footer .footer__link {
@@ -1285,7 +1326,7 @@ header {
     justify-content: center;
     text-decoration: none;
     align-self: center;
-    padding-left: 5px;
+    padding-left: 3px;
     font-size: 12px;
     font-family: "Montserrat", sans-serif;
   }
