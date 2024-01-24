@@ -13,10 +13,6 @@
   cursor: pointer;
 }
 
-.btn-back:hover {
-  border: 3px solid rgb(255, 255, 255);
-}
-
 .img_s, .img {
   width: 100%;
   height: auto;
@@ -150,6 +146,15 @@ body {
 }
 
 .btn {
+  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
+  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
+}
+
+.btn-back:hover {
+  border-color: #fff; /* Изменяем цвет обводки при наведении */
+}
+
+.btn-back {
   transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
   border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
 }
