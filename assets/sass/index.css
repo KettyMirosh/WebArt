@@ -40,26 +40,14 @@ h3 {
 }
 
 header {
-  background-color: #E4F1FA;
-  width: 100%;
-  max-width: 1147px;
-  height: auto;
-  margin: 0 auto;
+  margin-right: 18.75%;
+  margin-left: 18.75%;
   margin-top: 2%;
   justify-content: space-between;
   align-items: center;
   display: grid;
   grid-template-areas: "nav_logo nav_links telegram_header";
   grid-template-columns: 15% 70% 10%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.telegram_header {
-  grid-area: telegram_header;
-  margin: 0 auto;
-  justify-content: end;
-  margin-right: -1%;
 }
 
 .nav_logo {
@@ -84,22 +72,10 @@ header {
   line-height: 140%;
 }
 
-.link_aboutme:hover {
-  border-bottom: 1px solid;
-}
-
-.link:hover {
-  border-bottom: 1px solid;
-}
-
 .main_container {
-  background-color: #E4F1FA;
-  width: 100%;
-  max-width: 1147px;
-  height: auto;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-right: 18.75%;
+  margin-left: 18.75%;
+  height: 60vh;
 }
 
 .main_scr {
@@ -122,15 +98,6 @@ header {
   margin-top: -5%;
 }
 
-.main_scr_button:hover, .button_block-No_1more_master-classes:hover, .button_block-No1:hover {
-  border-color: #fff; /* Изменяем цвет обводки при наведении */
-}
-
-.main_scr_button, .button_block-No_1more_master-classes, .button_block-No1 {
-  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
-  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
-}
-
 .main_scr_button {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -151,29 +118,20 @@ header {
 }
 
 .main_img {
-  width: 100%;
-  max-width: 600px;
-  height: 100%;
+  width: 90%;
 }
 
 .about {
-  background-color: #F8FCFF;
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
+  background-color: white;
+  height: 80vh;
 }
 
 .about_artist {
   padding-top: 8%;
-  padding-bottom: 8%;
+  margin-right: 18.75%;
+  margin-left: 18.75%;
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 100%;
-  max-width: 1147px;
-  height: auto;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .photo_art {
@@ -194,12 +152,9 @@ header {
 
 .container_block-No1-with-pictures {
   width: 100%;
-  max-width: 1147px;
-  height: auto;
-  margin: 0 auto;
+  max-width: 1920px;
+  height: 1790px;
   background: #e4f1fa;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .matser-cards {
@@ -275,7 +230,6 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
-  margin-top: 4px;
   /*margin: 0px;
   padding: 0px;*/
 }
@@ -311,14 +265,12 @@ header {
   line-height: 140%;
   text-transform: uppercase;
   text-decoration: none;
-  margin-top: 15px;
 }
 
 .button_more_master-classes {
   display: flex;
   justify-content: center;
   padding-top: 3%;
-  padding-bottom: 5%;
 }
 
 .button_block-No_1more_master-classes {
@@ -342,6 +294,10 @@ header {
   text-decoration: none;
 }
 
+.button_block-No_1more_master-classes:hover, .button_block-No1:hover {
+  border: 3px solid #fff;
+}
+
 .price700 {
   color: #3b3f48;
   /* Стоимость */
@@ -350,7 +306,6 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 33.6px*/
-  margin-top: 4px;
 }
 
 .weight700 {
@@ -363,21 +318,16 @@ header {
   line-height: 140%;
 }
 
-.slider_background {
-  background-color: #F8FCFF;
-}
-
 .slider {
   height: 40%;
-  background-color: #F8FCFF;
-  padding-top: 8%;
-  padding-bottom: 5%;
+  background-color: white;
+  padding-top: 12%;
+  padding-bottom: 7%;
 }
 .slider .slider__h2 {
   color: #3b3f48;
   display: flex;
   justify-content: center;
-  padding-bottom: 2%;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -387,7 +337,7 @@ header {
 
 .slider__block {
   display: flex;
-  background-color: #F8FCFF;
+  background-color: white;
   overflow-x: scroll;
   padding: 5px;
   box-sizing: border-box;
@@ -448,22 +398,16 @@ header {
   height: 80px;
   flex-shrink: 0;
   background-color: #E4F1FA;
-  width: 100%;
-  max-width: 90%;
-  height: auto;
-  margin: 0 auto;
   padding-top: 2%;
   padding-bottom: 2%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20%;
 }
 .footer .footer__text {
   color: #3b3f48;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-self: center;
-  margin: 0 auto;
-  margin-right: 0%;
+  padding: 10px;
   font-family: "Montserrat", sans-serif;
 }
 .footer .footer__link {
@@ -472,7 +416,7 @@ header {
   justify-content: center;
   text-decoration: none;
   align-self: center;
-  padding-left: 7px;
+  padding-left: 5px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -586,29 +530,21 @@ header {
     box-shadow: 5px 5px 25px 0px rgba(14, 9, 73, 0.4);
   }
   .main_img {
-    height: auto;
-    width: 100%;
-    max-width: 383px;
-    margin: 0 auto;
+    width: 90%;
+    height: 60vh;
   }
   .about {
-    background-color: #F8FCFF;
-  }
-  header, .main_container, .main_scr, .container_block-No1-with-pictures, .about_artist, .footer {
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 90%;
+    background-color: white;
+    height: 80vh;
   }
   .about_artist {
+    padding-top: 8%;
+    margin-left: 5%;
     display: grid;
     grid-template-columns: 50% 50%;
-    display: grid;
   }
   .photo_art {
-    height: auto;
-    width: 100%;
-    max-width: 318px;
+    height: 60vh;
     display: block;
     margin: 0 auto;
   }
@@ -623,6 +559,9 @@ header {
   }
   .container_block-No1-with-pictures {
     background: #e4f1fa;
+    max-width: 768px;
+    height: 1790px;
+    padding: 0 30px;
   }
   .matser-cards {
     display: flex;
@@ -762,9 +701,9 @@ header {
   }
   .slider {
     height: 30%;
-    background-color: #F8FCFF;
-    padding-top: 8%;
-    padding-bottom: 5%;
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
   .slider .slider__h2 {
     color: #3b3f48;
@@ -778,7 +717,7 @@ header {
   }
   .slider__block {
     display: flex;
-    background-color: #F8FCFF;
+    background-color: white;
     overflow-x: scroll;
     padding: 5px;
     box-sizing: border-box;
@@ -870,6 +809,7 @@ header {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   body {
+    background-color: #E4F1FA;
     width: 98%;
   }
   h1 {
@@ -906,9 +846,6 @@ header {
     grid-template-areas: "nav_logo nav_links telegram_header";
     grid-template-columns: 15% 70% 15%;
     width: 100%;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .nav_logo {
     height: auto;
@@ -932,11 +869,11 @@ header {
     font-weight: 700;
     line-height: 140%;
   }
-  header, .main_container, .footer, .container_block-No1-with-pictures, .about {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 90%;
+  .main_container {
+    margin-left: 2%;
+    margin-right: 1.2%;
+    margin-bottom: -10%;
+    height: auto;
   }
   .main_scr {
     display: grid;
@@ -988,22 +925,20 @@ header {
     grid-area: main_scr_img;
     width: 100%;
     height: auto;
-    margin: 0 auto;
   }
   .about {
-    background-color: #F8FCFF;
+    background-color: white;
     height: auto;
     width: auto;
     padding-top: 10%;
     padding-bottom: 15%;
   }
   .about_text {
-    width: 100%;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: start;
     padding-bottom: 3%;
-    margin: 0 auto;
   }
   .about_artist {
     padding-top: 8%;
@@ -1011,13 +946,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
   }
   .photo_art {
     width: 288px;
-    max-width: 288px;
+    height: auto;
     display: block;
     margin: 0 auto;
     padding-top: 5%;
@@ -1050,7 +982,6 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 24px */
-    margin: 0 auto;
   }
   .matser-cards {
     /*display: inline;
@@ -1059,7 +990,7 @@ header {
     max-width: 300px;
     /*height: 2179px;
     height: 2400px;*/
-    width: 100%;
+    width: auto;
     height: auto;
   }
   .block-No1-master_class {
@@ -1079,7 +1010,6 @@ header {
     gap: 6px;
     padding-top: 25%;
     align-items: center;
-    margin: 0 auto;
   }
   .images_matser-cards {
     width: 100%;
@@ -1103,7 +1033,6 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 24px */
-    margin: 10px;
   }
   .font-30-320 {
     display: flex;
@@ -1113,7 +1042,6 @@ header {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     line-height: 120%; /* 24px */
-    margin-top: 20px;
   }
   .block-No1-text {
     /* width: 277.996px;
@@ -1173,20 +1101,18 @@ header {
     text-transform: uppercase;
     width: auto;
     height: auto;
-    margin: 0 auto;
   }
   .button_block {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-left: 28%;
+    padding-top: 9%;
   }
   .button_more_master-classes {
     /* display: flex;
      justify-content: center;*/
-    padding-top: 15%;
-    padding-bottom: 20%;
+    padding-top: 11%;
+    padding-bottom: 10%;
   }
   .button_block-No_1more_master-classes {
     display: inline-flex;
@@ -1227,14 +1153,9 @@ header {
     font-weight: 700;
     line-height: 120%;
   }
-  .slider_background {
-    background-color: #F8FCFF;
-    width: 100%;
-    max-width: 700px;
-  }
   .slider {
     height: 20%;
-    background-color: #F8FCFF;
+    background-color: white;
     padding-top: 10%;
     padding-bottom: 10%;
   }
@@ -1250,7 +1171,7 @@ header {
   }
   .slider__block {
     display: flex;
-    background-color: #F8FCFF;
+    background-color: white;
     overflow-x: scroll;
     padding: 5px;
     box-sizing: border-box;
@@ -1317,7 +1238,6 @@ header {
     align-self: center;
     padding: 10px;
     font-size: 12px;
-    margin-left: 25px;
     font-family: "Montserrat", sans-serif;
   }
   .footer .footer__link {
@@ -1326,7 +1246,7 @@ header {
     justify-content: center;
     text-decoration: none;
     align-self: center;
-    padding-left: 3px;
+    padding-left: 5px;
     font-size: 12px;
     font-family: "Montserrat", sans-serif;
   }
@@ -1340,6 +1260,4 @@ header {
   .footer__simbol-telega {
     align-self: center;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

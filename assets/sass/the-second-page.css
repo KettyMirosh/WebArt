@@ -1,34 +1,48 @@
-@import "./variables";
-@import "./extends";
+.btn-back, .btn {
+  border-radius: 15px;
+  background-color: rgb(14, 9, 73);
+  padding: 15px 30px 15px 30px;
+  font-size: 1.125rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 5px 5px 25px rgba(14, 9, 73, 0.4);
+  transition: 0.2s ease-in-out;
+  box-shadow: 2px 2px 10px rgb(191, 218, 234);
+  cursor: pointer;
+}
+
+.btn-back:hover, .btn:hover {
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.img_s, .img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid rgb(255, 255, 255);
+}
 
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Bold.woff), url(../fonts/Montserrat-Bold.woff2);
   font-weight: 700;
 }
-
-
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat-SemiBold.woff),
-    url(../fonts/Montserrat-SemiBold.woff2);
+  src: url(../fonts/Montserrat-SemiBold.woff), url(../fonts/Montserrat-SemiBold.woff2);
   font-weight: 600;
 }
-
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat-Medium.woff),
-    url(../fonts/Montserrat-Medium.woff2);
+  src: url(../fonts/Montserrat-Medium.woff), url(../fonts/Montserrat-Medium.woff2);
   font-weight: 500;
 }
-
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat-Regular.woff),
-    url(../fonts/Montserrat-Regular.woff2);
+  src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.woff2);
   font-weight: 400;
 }
-
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -38,16 +52,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  color: $darkGrey;
-  background-color: $lightBlue;
+  color: rgb(59, 63, 72);
+  background-color: rgb(228, 241, 250);
 }
 
-.page {
-  &__title {
-    margin: 90px 0 90px 0;
-  }
+.page__title {
+  margin: 90px 0 90px 0;
 }
-
 
 .title {
   text-align: center;
@@ -70,99 +81,64 @@ body {
   gap: 50px;
 }
 
-.link:hover,.link_aboutme:hover{
-  border-bottom: 1px solid ;
+.content__title, .content__title_hidden {
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 1.4;
 }
-
-.content {
-  &__title,
-  &__title_hidden {
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-    font-weight: 500;
-    font-size: 1.875rem;
-    line-height: 1.4;
-    &_hidden {
-      display: none;
-    }
-  }
-  &__text {
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    &_m {
-      margin-block-start: 0.3em;
-      margin-block-end: 0.3em;
-      font-weight: 600;
-      font-size: 1rem;
-      line-height: 1.2;
-    }
-    &_s {
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.2;
-    }
-  }
-  &__items {
-    margin-block-start: 0.3em;
-    margin-block-end: 0.3em;
-    list-style-type: none;
-    list-style-image: url(../images/Vector-min.png);
-  }
-  &__item {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-  &__price,
-  &__price_color {
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.4;
-  }
-  &__price_color {
-    color: $red;
-  }
+.content__title_hidden, .content__title_hidden_hidden {
+  display: none;
+}
+.content__text {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+.content__text_m {
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.content__text_s {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.content__items {
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  list-style-type: none;
+  list-style-image: url(../images/Vector-min.png);
+}
+.content__item {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.content__price, .content__price_color {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.content__price_color {
+  color: rgb(235, 96, 51);
 }
 
 .img {
   max-width: 570px;
-  @extend %image;
-  &_s {
-    max-width: 400px;
-    @extend %image;
-  }
+}
+.img_s {
+  max-width: 400px;
 }
 
 .btn {
   display: inline-flex;
-  @extend %style-button;
-  //&:hover {
-   // @extend %button-hover;
- // }
 }
-
-.btn:hover{
-  border-color: #fff; /* Изменяем цвет обводки при наведении */
-}
-
-.btn{
-
-  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
-  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
-}
-
-.btn-back:hover{
-  border-color: #fff; /* Изменяем цвет обводки при наведении */
-}
-
-.btn-back{
-
-  transition: border-color 0.3s; /* Добавляем плавное изменение цвета обводки при наведении */
-  border: 3px solid transparent; /* Задаем пустую обводку для сохранения места при ее появлении */
-}
-
 .button-back {
   display: flex;
   justify-content: center;
@@ -170,28 +146,9 @@ body {
   text-decoration: none;
 }
 
-.btn-back {
-  @extend %style-button;
- // &:hover {
-  //  @extend %button-hover;
-  //}
+#footer-white {
+  background-color: white;
 }
-
-.footer_background{
-  background-color: #F8FCFF;
-  max-width:100% ;
-
-}
-#footer-white{
-  background-color: #F8FCFF;
-  width: 78%;
-  max-width:78% ;
-  padding-left: 15px;
-  padding-right: 15px;
-
-
-}
-
 
 @media (min-width: 768px) and (max-width: 900px) {
   body {
@@ -249,7 +206,6 @@ body {
     font-size: 1.14rem;
   }
 }
-
 @media (min-width: 320px) and (max-width: 767px) {
   body {
     font-size: 14px;
@@ -326,4 +282,4 @@ body {
   .button-back {
     margin-bottom: 50px;
   }
-}
+}/*# sourceMappingURL=the-second-page.css.map */
